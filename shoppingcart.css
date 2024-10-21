@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.cart-header, .cart-footer {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-items {
+    padding: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.item-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding: 0 1rem;
+}
+
+.item-details h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.item-remove {
+    padding: 0 1rem;
+}
+
+.remove-button, .checkout-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-button:hover, .checkout-button:hover {
+    background-color: #c9302c;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Stiluri pentru fereastra modală */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Schimbă culoarea de fundal a modalei */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal label {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .modal input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .modal button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #555;
+  }
+  .card{
+    color: black;
+    
+  }

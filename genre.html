@@ -1,0 +1,630 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Title -->
+    <title>Felix</title>
+</head>
+
+<body>
+
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="actors.html">Actors</a></li>
+                    <li><a href="SingUp.html">Sign Up</a></li>
+                    <li><a href="cauta.html">Search</a></li>
+                    <li><a href="ShoppingCart.html"><img src="./images/cart-69-24.png" alt=""></a></li>
+                    <li>
+                        <a href="login.html" id="signin-link" class="btn btn-hover">
+                            <span>Log in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="content-container">
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">OFERTE SPECIALE</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/8.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">OBLIVION</span>
+                                <p class="movie-list-item-desc">Dezvăluie un viitor post-apocaliptic, plin de secrete și
+                                    răsturnări, cu acțiune și reflecții filosofice foarte marete.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$29.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Hobbit', 12.99, 'images/films/9.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/9.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Hobbit</span>
+                                <p class="movie-list-item-desc">Filmul prezintă aventurile lui Bilbo Baggins și
+                                    călătoria sa periculoasă spre Muntele Singuratic cu multe peripetii.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$12.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('OBLIVION', 29.99, 'images/films/8.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/10.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Due Date</span>
+                                <p class="movie-list-item-desc">Pieter se pregătește să devină tată și trebuie să
+                                    călătorească cu un actor ambițios pentru a ajunge acasă.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$14.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Due Date', 14.99, 'images/films/10.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/11.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">KICK-ASS2</span>
+                                <p class="movie-list-item-desc">După moartea tatălui său, Mindy se mută la tutorele său
+                                    Marcus și promite să renunțe la supereroism caci era in depresie mare.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$17.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('KICK-ASS2', 17.99, 'images/films/11.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/12.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Emoji Movie</span>
+                                <p class="movie-list-item-desc">Filmul de animație „The Emoji Movie” explorează aventura
+                                    captivantă a emoji-urilor din Textopolis.
+                                </p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$20.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Emoji Movie', 20.99, 'images/films/12.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/14.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Paths of glory</span>
+                                <p class="movie-list-item-desc">Acțiunea romanului cinematografic se desfășoară în 1916
+                                    pe
+                                    Frontul de Vest. Colonelul Dax conduce un regiment .</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$13.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Paths of glory', 13.99, 'images/films/14.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/20.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Ginny and Georgia</span>
+                                <p class="movie-list-item-desc">Femeia cu copii, luptându-se cu trecutul, caută
+                                    dragoste,
+                                    iar copiii se adaptează într-un nou oraș.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$11.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Ginny and Georgia', 11.99, 'images/films/20.jpg')">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/1.jpeg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Her</span>
+                                <p class="movie-list-item-desc">Theodore, un scriitor solitar, se îndrăgostește de un
+                                    sistem
+                                    de operare, schimbându-și viața complet.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$11.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Her', 11.99, 'images/films/1.jpeg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/2.jpeg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Star Wars</span>
+                                <p class="movie-list-item-desc">Jedi Qui-Gon Jin descoperă puterea lui Anakin pe
+                                    Tatooine,
+                                    crezând că poate restabili echilibrul galaxiei.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$12.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Star Wars', 12.99, 'images/films/2.jpeg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/3.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Storm</span>
+                                <p class="movie-list-item-desc">Ivan, traumatizat de război, se retrage singur în Siria
+                                    sub
+                                    numele de John, căutându-și pacea interioară.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$17.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Storm', 17.99, 'images/films/3.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/4.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">1917</span>
+                                <p class="movie-list-item-desc">Prezintă povestea a doi soldați britanici în
+                                    Primul Război Mondial, evidențiind ororile războiului de tranșee și sacrificiul
+                                    pentru
+                                    pace.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$19.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('1917', 19.99, 'images/films/4.jpg')">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/5.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Avengers</span>
+                                <p class="movie-list-item-desc">Supereroii se unesc pentru a opri planul malefic al lui
+                                    Thanos și al lui Loki cu ajutorul super puterilor loc mari.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$9.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Avengers', 9.99, 'images/films/5.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/6.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Rampange</span>
+                                <p class="movie-list-item-desc">Primatologul Davis Okoye și geneticienii își unesc
+                                    forțele
+                                    pentru a salva lumea de monștri genetici si strasnici.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$21.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Rampage', 21.99, 'images/films/6.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/7.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Ender's Game</span>
+                                <p class="movie-list-item-desc">Ender, lider genial, pregătit să salveze lumea de
+                                    invazia
+                                    extraterestră si plina de peripetii minunate.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$16.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Ender\'s Game', 16.99, 'images/films/7.jpg')">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">DRAMA</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/8.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">OBLIVION</span>
+                                <p class="movie-list-item-desc">Dezvăluie un viitor post-apocaliptic, plin de secrete și
+                                    răsturnări, cu acțiune și reflecții filosofice foarte marete.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$29.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('OBLIVION', 29.99, 'images/films/8.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/9.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Hobbit</span>
+                                <p class="movie-list-item-desc">Filmul prezintă aventurile lui Bilbo Baggins și
+                                    călătoria sa periculoasă spre Muntele Singuratic cu multe peripetii.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$12.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Hobbit', 12.99, 'images/films/9.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/10.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Due Date</span>
+                                <p class="movie-list-item-desc">Pieter se pregătește să devină tată și trebuie să
+                                    călătorească cu un actor ambițios pentru a ajunge acasă.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$14.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Due Date', 14.99, 'images/films/10.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/11.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">HICK-AASS2</span>
+                                <p class="movie-list-item-desc">După moartea tatălui său, Mindy se mută la tutorele său
+                                    Marcus și promite să renunțe la supereroism cu peripetii mari.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$26.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('KICK-ASS2', 26.99, 'images/films/11.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/12.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Emoji Movie</span>
+                                <p class="movie-list-item-desc">Filmul de animație „The Emoji Movie” explorează aventura
+                                    captivantă a emoji-urilor din Textopolis.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$19.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Emoji Movie', 19.99, 'images/films/12.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/14.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Paths of glory</span>
+                                <p class="movie-list-item-desc">Acțiunea romanului cinematografic se desfășoară în 1916
+                                    pe
+                                    Frontul de Vest. Colonelul Dax conduce un regiment de infanterie .</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$24.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Paths of glory', 24.99, 'images/films/14.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/20.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Ginny and Georgia</span>
+                                <p class="movie-list-item-desc">Femeia cu copii, luptându-se cu trecutul, caută
+                                    dragoste,
+                                    iar copiii se adaptează într-un nou oraș.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$31.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Ginny and Georgia', 31.99, 'images/films/20.jpg')">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ROMANCE</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/21.png" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Sen cal kapimi </span>
+                                <p class="movie-list-item-desc">Eda, pe cale să plece în Italia, își pierde brusc bursa
+                                    și
+                                    începe să lucreze la florărie.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$12.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Sen cal kapimi', 12.99, 'images/films/21.png')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/22.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Lovely runner</span>
+                                <p class="movie-list-item-desc">Im Sol călătorește în trecut pentru a preveni moartea
+                                    idolului său, Ryu Sung Jae, la 19 ani.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$20.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Lovely runner', 20.99, 'images/films/22.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/32.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Titanic</span>
+                                <p class="movie-list-item-desc">Pe Titanic, Jack și Rose se îndrăgostesc, dar un aisberg
+                                    le
+                                    pune dragostea la încercare.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$28.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Titanic', 28.99, 'images/films/32.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/34.webp" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Purple heart</span>
+                                <p class="movie-list-item-desc">O tânără cântăreață acceptă o căsătorie falsă cu un
+                                    pușcaș
+                                    marin, dar o tragedie le trezește sentiment.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$15.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Purple heart', 15.99, 'images/films/34.webp')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/24.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">The Kissing booth</span>
+                                <p class="movie-list-item-desc">Ely, liceană drăguță, își dă primul sărut cu Noah,
+                                    fratele
+                                    prietenului ei, la un carnaval.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$17.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('The Kissing booth', 17.99, 'images/films/24.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/25.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Culpa mia</span>
+                                <p class="movie-list-item-desc">Tânăra se mută cu mama ei și soțul ei bogat; fratele
+                                    vitreg
+                                    neprietenos devine treptat iubitul ei secret.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$22.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Culpa mia', 22.99, 'images/films/25.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/33.jfif" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Trought my window</span>
+                                <p class="movie-list-item-desc">Raquel e obsedată de vecinul ei Ares și decide să-l
+                                    cucerească cu orice preț.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$12.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Trought my window', 12.99, 'images/films/33.jfif')">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ACTION</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/17.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Aquaman</span>
+                                <p class="movie-list-item-desc">Aquaman, fiul unui om și a unei regine atlantiene,
+                                    îmbinând
+                                    umorul cu dramatismul, captivând prin originalitate.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$17.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Aquaman', 17.99, 'images/films/17.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/27.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Fast and furious</span>
+                                <p class="movie-list-item-desc">"Fast & Furious" aduce aminte de filmele de vară ale
+                                    vremurilor vechi, cu spiritul pirateriei și cursele ilegale.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$16.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Fast and furious', 16.99, 'images/films/27.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/19.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Spider Men</span>
+                                <p class="movie-list-item-desc">Peter Parker și Doctor Strange se aliază împotriva
+                                    inamicilor interdimensionali, salvând universurile paralele.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$25.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Spider Men', 25.99, 'images/films/19.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/28.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Red notice</span>
+                                <p class="movie-list-item-desc">Agentul Interpol se aliază cu fostul coleg și
+                                    afaceristul
+                                    pentru a prinde vicleanul profesionist si i se primeste intr-un final.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$19.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Red notice', 19.99, 'images/films/28.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/29.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Dangerous LIES</span>
+                                <p class="movie-list-item-desc">O îngrijitoare devine ținta criminalilor după ce
+                                    moștenie
+                                    bogată le revine, fiind nevoită să dezlege intrigi.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$16.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Dangerous LIES', 16.99, 'images/films/29.jpg')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/30.png" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">Riverdale</span>
+                                <p class="movie-list-item-desc">Performanțele lui Amick și Reinhart au adus emoție și
+                                    profunzime în Riverdale. Fascinant și captivant de interesat te tine in suspans.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$23.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('Riverdale', 23.99, 'images/films/30.png')">Buy</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/films/31.jpg" alt="Film">
+                            <div class="description">
+                                <span class="movie-list-item-title">THE PENTHOUSE WAR IN LIFE</span>
+                                <p class="movie-list-item-desc">Fiica își urmează pasiunea muzicală, în pofida
+                                    scepticismului mamei, inspirată de un concert.</p>
+                            </div>
+                            <div class="shop-film">
+                                <div>$25.99</div>
+                                <button class="movie-list-item-button"
+                                    onclick="addToCart('THE PENTHOUSE WAR IN LIFE', 25.99, 'images/films/31.jpg')">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const arrows = document.querySelectorAll(".arrow");
+        const movieLists = document.querySelectorAll(".movie-list");
+
+        arrows.forEach((arrow, i) => {
+            const itemNumber = movieLists[i].querySelectorAll("img").length;
+            let clickCounter = 0;
+            arrow.addEventListener("click", () => {
+                const ratio = Math.floor(window.innerWidth / 270);
+                clickCounter++;
+                if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+                    movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+                        }px)`;
+                } else {
+                    movieLists[i].style.transform = "translateX(0)";
+                    clickCounter = 0;
+                }
+            });
+
+            console.log(Math.floor(window.innerWidth / 270));
+        });
+        function addToCart(name, price, image) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price, image });
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Afișează mesajul de confirmare
+            showConfirmationMessage(`${name} a fost adăugat în coșul de cumpărături.`);
+        }
+
+        function showConfirmationMessage(message) {
+            const confirmationMessage = document.createElement('div');
+            confirmationMessage.className = 'confirmation-message';
+            confirmationMessage.innerText = message;
+
+            document.body.appendChild(confirmationMessage);
+
+            // Elimină mesajul după 3 secunde
+            setTimeout(() => {
+                document.body.removeChild(confirmationMessage);
+            }, 3000);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburgerMenu.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

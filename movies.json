@@ -1,0 +1,226 @@
+[
+    {
+        "sys": { "id": "1" },
+        "fields": {
+            "title": "OBLIVION",
+            "price": 12.99,
+            "image": { "fields": { "file": { "url": "images/films/8.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "2" },
+        "fields": {
+            "title": "Hobbit",
+            "price": 18.99,
+            "image": { "fields": { "file": { "url": "images/films/9.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "3" },
+        "fields": {
+            "title": "Due Date",
+            "price": 29.99,
+            "image": { "fields": { "file": { "url": "images/films/10.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "4" },
+        "fields": {
+            "title": "HICK-AASS2",
+            "price": 26.99,
+            "image": { "fields": { "file": { "url": "images/films/11.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "5" },
+        "fields": {
+            "title": "Emoji Movie",
+            "price": 19.99,
+            "image": { "fields": { "file": { "url": "images/films/12.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "6" },
+        "fields": {
+            "title": "Paths of glory",
+            "price": 24.99,
+            "image": { "fields": { "file": { "url": "images/films/14.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "7" },
+        "fields": {
+            "title": "Ginny and Georgia",
+            "price": 31.99,
+            "image": { "fields": { "file": { "url": "images/films/20.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "8" },
+        "fields": {
+            "title": "Sen cal kapimi",
+            "price": 12.99,
+            "image": { "fields": { "file": { "url": "images/films/21.png" } } }
+        }
+    },
+    {
+        "sys": { "id": "9" },
+        "fields": {
+            "title": "Lovely runner",
+            "price": 20.99,
+            "image": { "fields": { "file": { "url": "images/films/22.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "10" },
+        "fields": {
+            "title": "Titanic",
+            "price": 28.99,
+            "image": { "fields": { "file": { "url": "images/films/32.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "11" },
+        "fields": {
+            "title": "Purple heart",
+            "price": 15.99,
+            "image": { "fields": { "file": { "url": "images/films/2.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "12" },
+        "fields": {
+            "title": "The Kissing booth",
+            "price": 17.99,
+            "image": { "fields": { "file": { "url": "images/films/24.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "13" },
+        "fields": {
+            "title": "Culpa mia",
+            "price": 22.99,
+            "image": { "fields": { "file": { "url": "images/films/25.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "14" },
+        "fields": {
+            "title": "Trought my window",
+            "price": 12.99,
+            "image": { "fields": { "file": { "url": "images/films/33.jfif" } } }
+        }
+    },
+    {
+        "sys": { "id": "15" },
+        "fields": {
+            "title": "Aquaman",
+            "price": 17.99,
+            "image": { "fields": { "file": { "url": "images/films/17.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "16" },
+        "fields": {
+            "title": "Fast and furious",
+            "price": 16.99,
+            "image": { "fields": { "file": { "url": "images/films/27.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "17" },
+        "fields": {
+            "title": "Spider Men",
+            "price": 25.99,
+            "image": { "fields": { "file": { "url": "images/films/19.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "18" },
+        "fields": {
+            "title": "Red notice",
+            "price": 19.99,
+            "image": { "fields": { "file": { "url": "images/films/28.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "19" },
+        "fields": {
+            "title": "Dangerous LIES",
+            "price": 16.99,
+            "image": { "fields": { "file": { "url": "images/films/29.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "20" },
+        "fields": {
+            "title": "Riverdale",
+            "price": 23.99,
+            "image": { "fields": { "file": { "url": "images/films/30.png" } } }
+        }
+    },
+    {
+        "sys": { "id": "21" },
+        "fields": {
+            "title": "THE PENTHOUSE WAR IN LIFE",
+            "price": 25.99,
+            "image": { "fields": { "file": { "url": "images/films/31.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "22" },
+        "fields": {
+            "title": "The Avengers",
+            "price": 18.99,
+            "image": { "fields": { "file": { "url": "./images/films/2.jpeg" } } }
+        }
+    },
+    {
+        "sys": { "id": "23" },
+        "fields": {
+            "title": "The Godfather",
+            "price": 20.99,
+            "image": { "fields": { "file": { "url": "./images/films/3.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "24" },
+        "fields": {
+            "title": "The Shawshank Redemption",
+            "price": 22.99,
+            "image": { "fields": { "file": { "url": "./images/films/4.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "25" },
+        "fields": {
+            "title": "Inception",
+            "price": 25.99,
+            "image": { "fields": { "file": { "url": "./images/films/5.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "26" },
+        "fields": {
+            "title": "Forrest Gump",
+            "price": 17.99,
+            "image": { "fields": { "file": { "url": "./images/films/6.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "27" },
+        "fields": {
+            "title": "Fight Club",
+            "price": 19.99,
+            "image": { "fields": { "file": { "url": "./images/films/7.jpg" } } }
+        }
+    },
+    {
+        "sys": { "id": "28" },
+        "fields": {
+            "title": "Star Wars",
+            "price": 12.99,
+            "image": { "fields": { "file": { "url": "./images/films/2.jpeg" } } }
+        }
+    }
+]

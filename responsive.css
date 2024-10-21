@@ -1,0 +1,17 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  }

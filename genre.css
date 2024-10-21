@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-1 {
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #181616;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.description{
+    margin-top: 20px;
+    width: 450x;
+    display: block;
+}
+.movie-list-container {
+    margin-bottom: 40px;
+}
+
+.movie-list-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+.movie-list-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-list {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.movie-list-item {
+    min-width: 250px;
+    margin-right: 20px;
+    background-color: black;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-list-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-list-item-img {
+    width: 300px;
+    height: 140px;
+}
+
+.movie-list-item-title {
+    font-size: 1.4em;
+    margin: 10px 0 30px;
+}
+
+.movie-list-item-desc {
+    font-size: 0.9em;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.movie-list-item-button {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-list-item-button:hover {
+    background-color:#c0392b;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+  } 
+
+.arrow:hover {
+    color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+    .movie-list-item {
+        min-width: 180px;
+    }
+}
+.shop-film{
+    display: flex;
+    gap: 130px;
+    font-size: larger;
+    margin-top: 50px;
+}
+.shop-film button{
+    cursor: pointer;
+}
+.confirmation-message {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+

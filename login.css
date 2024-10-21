@@ -1,0 +1,141 @@
+body {
+    background-color: #221f1f; /* Fundal întunecat */
+    color: #fff; /* Text alb */
+    font-family: Arial, sans-serif; /* Font */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #00000000; /* Fundal container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Umbra */
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555; /* Fundal input */
+    color: #fff; /* Text input */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722; /* Fundal buton */
+    color: #fff; /* Text buton */
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #f44336; /* Culore hover buton */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30rem;
+    background: #131419;
+}
+
+.form{
+    top: 4rem;
+    position: relative;
+    width: 350px;
+    padding: 40px 40px 60px;
+    background: #131419;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 10px rgba(255 , 255 , 255 , 0.05),
+                5px 5px 15px rgba(0 , 0 , 0 , 0.5);
+}
+
+.form h2{
+    color: #c7c7c7;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.form .input{
+    text-align: left;
+    margin-top: 40px;
+}
+
+.form .input .inputbox{
+    
+    margin-top: 20px;
+}
+
+.form .input .inputbox label{
+    
+    display: block;
+    color: #868686;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form .input .inputbox input{
+    width: 100%;
+    height: 50px;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 18px;
+    color: #03a9f4;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,.05),
+                inset 2px 2px 6px rgba(0,0,0,.8) ;
+}
+
+.form .input .inputbox input[type = "submit"]{
+    margin-top: 20px;
+    box-shadow:  -2px -2px 6px rgba(255,255,255,.05),
+                 2px 2px 6px rgba(0,0,0,.8) ;
+}
+
+.form .input .inputbox input[type = "submit"]:active{
+    color: #006c9c;
+    margin-top: 20px;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,.05),
+                inset 2px 2px 6px rgba(0,0,0,.8) ;
+}
+
+.forget{
+    margin-top: 30px;
+    color: #555;
+}
+
+.forget a{
+    color: #ff0047;
+}
